@@ -1,1 +1,65 @@
-Hello World
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Homepage</title>
+			<style>
+				body {
+ 					background-image: url("https://storywarren.com/wp-content/uploads/2016/09/space-1.jpg");
+				}
+				div {
+					color: white;
+					text-align: center;
+					font-size: 20px;
+				}
+
+				h1 {
+    				color: white;
+   					text-align: center;
+   					font-size: 45px;
+				}
+				.button {
+ 					background-color: white;
+ 					border: none;
+ 					color: black;
+ 					padding: 10px 20px;
+ 					text-align: center;
+  					font-size: 16px;
+  					cursor: pointer;
+  					border-radius: 10px;
+				}
+				.button span {
+					cursor: pointer;
+  					display: inline-block;
+  					position: relative;
+  					transition: 0.4s;
+				}
+				.button span:after {
+					content: '\00bb';
+  					position: absolute;
+  					opacity: 0;
+  					top: 0;
+  					right: -20px;
+  					transition: 0.4s;}
+
+				.button:hover span {
+ 					padding-right: 25px;
+				}
+				.button:hover span:after {
+ 					opacity: 1;
+  					right: 0;
+			</style>
+		</head>
+	
+		<body>
+			<h1>Space</h1>
+			<div>This website is dedicated to showing an overview of the main components of and history of space for anybody who is curious about it.</div>
+			<div class="w3-container">
+  				<h2>Learn more about space:</h2>
+ 				<button class="button" type="button" onclick="window.location.href='planets.html'"><span>Planets</span></button>
+ 				<button class="button" type="button" onclick="window.location.href='dwarfplanets.html'"><span>Dwarf Planets</span></button>
+ 				<button class="button" type="button" onclick="window.location.href='stars.html'"><span>Stars</span></button>
+ 				<button class="button" type="button" onclick="window.location.href='mysteriesofspace.html'"><span>Mysteries of Space</span></button>
+ 				<button class="button" type="button" onclick="window.location.href='link5'"><span>Black Holes</span></button>
+ 				<button class="button" type="button" onclick="window.location.href='Expandinguniverse.html'"><span>Expanding Universe</span></button>
+ 		</body>
+	</html>
